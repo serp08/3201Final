@@ -6,39 +6,32 @@ module sonic(
 	output reg [32:0] distance
 );
 
+reg [20:0] counter = 0;
 reg [32:0] us_counter = 0;
 reg _trig = 1'b0;
-
-reg [9:0] one_us_cnt = 0;
-wire one_us = (one_us_cnt == 0);
-
-reg [9:0] ten_us_cnt = 0;
-wire ten_us = (ten_us_cnt == 0);
-
-reg [21:0] forty_ms_cnt = 0;
-wire forty_ms = (forty_ms_cnt == 0);
 
 assign trig = _trig;
 
 always @(posedge clock) begin
-	one_us_cnt <= (one_us ? 50 : one_us_cnt) - 1;
-	ten_us_cnt <= (ten_us ? 500 : ten_us_cnt) - 1;
-	forty_ms_cnt <= (forty_ms ? 2000000 : forty_ms_cnt) - 1;
+	counter <= counter + 1;
 	
-	if (ten_us && _trig)
+	if(counter % 2500000 == 0) begin // check distance every 50ms, trigger HIGH
+		_trig <= 1'b1;
+	end
+		
+	if (counter % 100 == 0 && _trig) begin // if triggered & 2us passed
 		_trig <= 1'b0;
+	end
 	
-	if (one_us) begin	
-		if (echo)
-			us_counter <= us_counter + 1;
+	if (counter % 50 == 0) begin	
+		if (echo) begin
+			us_counter <= us_counter + 1; // count how long it takes for the signal to bounce back
+		end
 		else if (us_counter) begin
-			distance <= us_counter / 58;
+			distance <= us_counter / 58; 
 			us_counter <= 0;
 		end
 	end
-	
-   if (forty_ms)
-		_trig <= 1'b1;
 end
 
 endmodule
