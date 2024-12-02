@@ -1,0 +1,6 @@
+module motor(
+	input clk,
+	output m1F,
+	output m1B,
+	output m2F,
+	output m2B);
