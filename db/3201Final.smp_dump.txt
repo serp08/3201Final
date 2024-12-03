@@ -1,4 +1,14 @@
 
+State Machine - |LuongMarcoFinal|adjusting
+Name adjusting.01 
+adjusting.00 0 
+adjusting.01 1 
+
+State Machine - |LuongMarcoFinal|scanning
+Name scanning.01 
+scanning.00 0 
+scanning.01 1 
+
 State Machine - |LuongMarcoFinal|beepBlink:bb|on
 Name on.01 
 on.00 0 

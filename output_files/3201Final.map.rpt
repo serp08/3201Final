@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 3201Final
-Mon Dec 02 17:05:28 2024
+Mon Dec 02 22:04:41 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,30 +13,35 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |LuongMarcoFinal|beepBlink:bb|on
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
- 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
- 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
- 17. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
- 18. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
- 19. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Mod1
- 20. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Mod0
- 21. Parameter Settings for Inferred Entity Instance: beepBlink:bb|lpm_divide:Mod0
- 22. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Div0
- 23. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Mod2
- 24. Port Connectivity Checks: "sevenSeg:thou"
- 25. Port Connectivity Checks: "sevenSeg:hun"
- 26. Port Connectivity Checks: "sevenSeg:ten"
- 27. Port Connectivity Checks: "sevenSeg:one"
- 28. Post-Synthesis Netlist Statistics for Top Partition
- 29. Elapsed Time Per Partition
- 30. Analysis & Synthesis Messages
- 31. Analysis & Synthesis Suppressed Messages
+  8. State Machine - |LuongMarcoFinal|adjusting
+  9. State Machine - |LuongMarcoFinal|scanning
+ 10. State Machine - |LuongMarcoFinal|beepBlink:bb|on
+ 11. User-Specified and Inferred Latches
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 17. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 18. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 19. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 20. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
+ 21. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
+ 22. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
+ 23. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Mod1
+ 24. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Mod0
+ 25. Parameter Settings for Inferred Entity Instance: beepBlink:bb|lpm_divide:Mod0
+ 26. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod4
+ 27. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Div0
+ 28. Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Mod2
+ 29. Port Connectivity Checks: "sevenSeg:thou"
+ 30. Port Connectivity Checks: "sevenSeg:hun"
+ 31. Port Connectivity Checks: "sevenSeg:ten"
+ 32. Port Connectivity Checks: "sevenSeg:one"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -62,15 +67,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 02 17:05:28 2024       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 02 22:04:41 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 3201Final                                   ;
 ; Top-level Entity Name              ; LuongMarcoFinal                             ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 5,720                                       ;
-;     Total combinational functions  ; 5,719                                       ;
-;     Dedicated logic registers      ; 132                                         ;
-; Total registers                    ; 132                                         ;
+; Total logic elements               ; 6,643                                       ;
+;     Total combinational functions  ; 6,611                                       ;
+;     Dedicated logic registers      ; 264                                         ;
+; Total registers                    ; 264                                         ;
 ; Total pins                         ; 37                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -181,10 +186,10 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processor 6            ;   0.0%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
 ;     Processors 9-10        ;   0.0%      ;
@@ -224,6 +229,9 @@ refer to the applicable agreement for further details.
 ; db/lpm_divide_cnl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_cnl.tdf      ;         ;
 ; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_bnh.tdf ;         ;
 ; db/alt_u_div_0le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_0le.tdf       ;         ;
+; db/lpm_divide_dnl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_dnl.tdf      ;         ;
+; db/sign_div_unsign_cnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_cnh.tdf ;         ;
+; db/alt_u_div_2le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_2le.tdf       ;         ;
 ; db/lpm_divide_ptl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_ptl.tdf      ;         ;
 ; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_rlh.tdf ;         ;
 ; db/alt_u_div_0ie.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_0ie.tdf       ;         ;
@@ -236,20 +244,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 5,720     ;
+; Estimated Total logic elements              ; 6,643     ;
 ;                                             ;           ;
-; Total combinational functions               ; 5719      ;
+; Total combinational functions               ; 6611      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1302      ;
-;     -- 3 input functions                    ; 1546      ;
-;     -- <=2 input functions                  ; 2871      ;
+;     -- 4 input functions                    ; 1555      ;
+;     -- 3 input functions                    ; 1806      ;
+;     -- <=2 input functions                  ; 3250      ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 4024      ;
-;     -- arithmetic mode                      ; 1695      ;
+;     -- normal mode                          ; 4602      ;
+;     -- arithmetic mode                      ; 2009      ;
 ;                                             ;           ;
-; Total registers                             ; 132       ;
-;     -- Dedicated logic registers            ; 132       ;
+; Total registers                             ; 264       ;
+;     -- Dedicated logic registers            ; 264       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 37        ;
@@ -257,9 +265,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 131       ;
-; Total fan-out                               ; 15447     ;
-; Average fan-out                             ; 2.61      ;
+; Maximum fan-out                             ; 263       ;
+; Total fan-out                               ; 18334     ;
+; Average fan-out                             ; 2.64      ;
 +---------------------------------------------+-----------+
 
 
@@ -268,12 +276,12 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                           ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |LuongMarcoFinal                          ; 5719 (10)           ; 132 (2)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 37   ; 0            ; 0          ; |LuongMarcoFinal                                                                                                              ; LuongMarcoFinal     ; work         ;
-;    |beepBlink:bb|                         ; 713 (73)            ; 35 (35)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb                                                                                                 ; beepBlink           ; work         ;
-;       |lpm_divide:Mod0|                   ; 640 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;          |lpm_divide_cnl:auto_generated|  ; 640 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0|lpm_divide_cnl:auto_generated                                                   ; lpm_divide_cnl      ; work         ;
-;             |sign_div_unsign_bnh:divider| ; 640 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0|lpm_divide_cnl:auto_generated|sign_div_unsign_bnh:divider                       ; sign_div_unsign_bnh ; work         ;
-;                |alt_u_div_0le:divider|    ; 640 (640)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0|lpm_divide_cnl:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_0le:divider ; alt_u_div_0le       ; work         ;
+; |LuongMarcoFinal                          ; 6611 (247)          ; 264 (134)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 37   ; 0            ; 0          ; |LuongMarcoFinal                                                                                                              ; LuongMarcoFinal     ; work         ;
+;    |beepBlink:bb|                         ; 714 (73)            ; 35 (35)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb                                                                                                 ; beepBlink           ; work         ;
+;       |lpm_divide:Mod0|                   ; 641 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_cnl:auto_generated|  ; 641 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0|lpm_divide_cnl:auto_generated                                                   ; lpm_divide_cnl      ; work         ;
+;             |sign_div_unsign_bnh:divider| ; 641 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0|lpm_divide_cnl:auto_generated|sign_div_unsign_bnh:divider                       ; sign_div_unsign_bnh ; work         ;
+;                |alt_u_div_0le:divider|    ; 641 (641)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|beepBlink:bb|lpm_divide:Mod0|lpm_divide_cnl:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_0le:divider ; alt_u_div_0le       ; work         ;
 ;    |lpm_divide:Div0|                      ; 317 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Div0                                                                                              ; lpm_divide          ; work         ;
 ;       |lpm_divide_ntl:auto_generated|     ; 317 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Div0|lpm_divide_ntl:auto_generated                                                                ; lpm_divide_ntl      ; work         ;
 ;          |sign_div_unsign_plh:divider|    ; 317 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Div0|lpm_divide_ntl:auto_generated|sign_div_unsign_plh:divider                                    ; sign_div_unsign_plh ; work         ;
@@ -302,6 +310,11 @@ refer to the applicable agreement for further details.
 ;       |lpm_divide_qll:auto_generated|     ; 220 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Mod3|lpm_divide_qll:auto_generated                                                                ; lpm_divide_qll      ; work         ;
 ;          |sign_div_unsign_plh:divider|    ; 220 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider                                    ; sign_div_unsign_plh ; work         ;
 ;             |alt_u_div_she:divider|       ; 220 (220)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider              ; alt_u_div_she       ; work         ;
+;    |lpm_divide:Mod4|                      ; 653 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Mod4                                                                                              ; lpm_divide          ; work         ;
+;       |lpm_divide_dnl:auto_generated|     ; 653 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Mod4|lpm_divide_dnl:auto_generated                                                                ; lpm_divide_dnl      ; work         ;
+;          |sign_div_unsign_cnh:divider|    ; 653 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Mod4|lpm_divide_dnl:auto_generated|sign_div_unsign_cnh:divider                                    ; sign_div_unsign_cnh ; work         ;
+;             |alt_u_div_2le:divider|       ; 653 (653)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|lpm_divide:Mod4|lpm_divide_dnl:auto_generated|sign_div_unsign_cnh:divider|alt_u_div_2le:divider              ; alt_u_div_2le       ; work         ;
+;    |motorCtrl:mc|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|motorCtrl:mc                                                                                                 ; motorCtrl           ; work         ;
 ;    |sevenSeg:hun|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|sevenSeg:hun                                                                                                 ; sevenSeg            ; work         ;
 ;    |sevenSeg:one|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|sevenSeg:one                                                                                                 ; sevenSeg            ; work         ;
 ;    |sevenSeg:ten|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |LuongMarcoFinal|sevenSeg:ten                                                                                                 ; sevenSeg            ; work         ;
@@ -328,6 +341,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
++--------------------------------------------+
+; State Machine - |LuongMarcoFinal|adjusting ;
++--------------+-----------------------------+
+; Name         ; adjusting.01                ;
++--------------+-----------------------------+
+; adjusting.00 ; 0                           ;
+; adjusting.01 ; 1                           ;
++--------------+-----------------------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------+
+; State Machine - |LuongMarcoFinal|scanning ;
++-------------+-----------------------------+
+; Name        ; scanning.01                 ;
++-------------+-----------------------------+
+; scanning.00 ; 0                           ;
+; scanning.01 ; 1                           ;
++-------------+-----------------------------+
+
+
+Encoding Type:  One-Hot
 +--------------------------------------------------+
 ; State Machine - |LuongMarcoFinal|beepBlink:bb|on ;
 +-------+------------------------------------------+
@@ -338,17 +373,40 @@ Encoding Type:  One-Hot
 +-------+------------------------------------------+
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; toggle[1]                             ; Stuck at GND due to stuck port data_in ;
-; state[1]                              ; Merged with state[0]                   ;
-; beepBlink:bb|on~5                     ; Lost fanout                            ;
-; sonic:sn|distance[28..32]             ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 8 ;                                        ;
-+---------------------------------------+----------------------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; motorCtrl:mc|m2FReg                                ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; toggle[1]                              ; Stuck at GND due to stuck port data_in ;
+; adjusting~5                            ; Lost fanout                            ;
+; scanning~4                             ; Lost fanout                            ;
+; beepBlink:bb|on~5                      ; Lost fanout                            ;
+; sonic:sn|distance[28..32]              ; Stuck at GND due to stuck port data_in ;
+; largestDist[28..32]                    ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 14 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                     ;
++---------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++---------------+---------------------------+-------------------------------------------------------------------------------------+
+; toggle[1]     ; Stuck at GND              ; largestDist[32], largestDist[31], largestDist[30], largestDist[29], largestDist[28] ;
+;               ; due to stuck port data_in ;                                                                                     ;
++---------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -356,12 +414,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 132   ;
+; Total registers                              ; 264   ;
 ; Number of registers using Synchronous Clear  ; 33    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 95    ;
+; Number of registers using Clock Enable       ; 194   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -371,7 +429,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
-; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |LuongMarcoFinal|sonic:sn|distCounter[21] ;
+; 3:1                ; 33 bits   ; 66 LEs        ; 33 LEs               ; 33 LEs                 ; Yes        ; |LuongMarcoFinal|sonic:sn|distCounter[16] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |LuongMarcoFinal|distCounter[32]          ;
+; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; Yes        ; |LuongMarcoFinal|distCounter[14]          ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |LuongMarcoFinal|state[1]                 ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |LuongMarcoFinal|adjusting                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
 
 
@@ -605,6 +667,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod4 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 33             ; Untyped                ;
+; LPM_WIDTHD             ; 25             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_dnl ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +---------------------------------------------------------------------------+
 ; Parameter Settings for Inferred Entity Instance: sonic:sn|lpm_divide:Div0 ;
 +------------------------+----------------+---------------------------------+
@@ -693,24 +778,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 37                          ;
-; cycloneiii_ff         ; 132                         ;
-;     ENA               ; 62                          ;
+; cycloneiii_ff         ; 264                         ;
+;     ENA               ; 161                         ;
 ;     ENA SCLR          ; 33                          ;
-;     plain             ; 37                          ;
-; cycloneiii_lcell_comb ; 5724                        ;
-;     arith             ; 1695                        ;
-;         1 data inputs ; 7                           ;
-;         2 data inputs ; 168                         ;
-;         3 data inputs ; 1520                        ;
-;     normal            ; 4029                        ;
-;         0 data inputs ; 255                         ;
-;         1 data inputs ; 93                          ;
-;         2 data inputs ; 2353                        ;
-;         3 data inputs ; 26                          ;
-;         4 data inputs ; 1302                        ;
+;     plain             ; 70                          ;
+; cycloneiii_lcell_comb ; 6615                        ;
+;     arith             ; 2009                        ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 253                         ;
+;         3 data inputs ; 1745                        ;
+;     normal            ; 4606                        ;
+;         0 data inputs ; 264                         ;
+;         1 data inputs ; 96                          ;
+;         2 data inputs ; 2630                        ;
+;         3 data inputs ; 61                          ;
+;         4 data inputs ; 1555                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 74.70                       ;
-; Average LUT depth     ; 56.88                       ;
+; Average LUT depth     ; 53.12                       ;
 +-----------------------+-----------------------------+
 
 
@@ -719,7 +804,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -729,7 +814,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec 02 17:05:19 2024
+    Info: Processing started: Mon Dec 02 22:04:30 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 3201Final -c 3201Final
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -745,11 +830,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file motorct
 Info (12021): Found 1 design units, including 1 entities, in source file beepblink.v
     Info (12023): Found entity 1: beepBlink File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/beepBlink.v Line: 1
 Info (12127): Elaborating entity "LuongMarcoFinal" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at LuongMarcoFinal.v(21): object "leftRight" assigned a value but never read File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 21
-Warning (10036): Verilog HDL or VHDL warning at LuongMarcoFinal.v(22): object "distCounter" assigned a value but never read File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 22
-Warning (10036): Verilog HDL or VHDL warning at LuongMarcoFinal.v(23): object "angle" assigned a value but never read File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 23
-Warning (10230): Verilog HDL assignment warning at LuongMarcoFinal.v(63): truncated value with size 32 to match size of target (3) File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 63
 Info (10264): Verilog HDL Case Statement information at LuongMarcoFinal.v(65): all case item expressions in this case statement are onehot File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 65
+Warning (10230): Verilog HDL assignment warning at LuongMarcoFinal.v(78): truncated value with size 32 to match size of target (3) File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 78
 Info (12128): Elaborating entity "sonic" for hierarchy "sonic:sn" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 28
 Info (12128): Elaborating entity "sevenSeg" for hierarchy "sevenSeg:one" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 29
 Info (12128): Elaborating entity "beepBlink" for hierarchy "beepBlink:bb" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 35
@@ -758,8 +840,7 @@ Warning (10240): Verilog HDL Always Construct warning at motorCtrl.v(21): inferr
 Warning (10240): Verilog HDL Always Construct warning at motorCtrl.v(21): inferring latch(es) for variable "m2BReg", which holds its previous value in one or more paths through the always construct File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/motorCtrl.v Line: 21
 Info (10041): Inferred latch for "m2BReg" at motorCtrl.v(21) File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/motorCtrl.v Line: 21
 Info (10041): Inferred latch for "m2FReg" at motorCtrl.v(21) File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/motorCtrl.v Line: 21
-Warning (14025): LATCH primitive "motorCtrl:mc|m2FReg" is permanently disabled File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/motorCtrl.v Line: 21
-Info (278001): Inferred 12 megafunctions from design logic
+Info (278001): Inferred 13 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 29
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 30
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 30
@@ -770,6 +851,7 @@ Info (278001): Inferred 12 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod1" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 22
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 18
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "beepBlink:bb|Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/beepBlink.v Line: 17
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 64
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Div0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 31
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod2" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 26
 Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 29
@@ -852,6 +934,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_bnh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0le.tdf
     Info (12023): Found entity 1: alt_u_div_0le File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_0le.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod4" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 64
+Info (12133): Instantiated megafunction "lpm_divide:Mod4" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 64
+    Info (12134): Parameter "LPM_WIDTHN" = "33"
+    Info (12134): Parameter "LPM_WIDTHD" = "25"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_dnl.tdf
+    Info (12023): Found entity 1: lpm_divide_dnl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_dnl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_cnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_cnh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_cnh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_2le.tdf
+    Info (12023): Found entity 1: alt_u_div_2le File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_2le.tdf Line: 26
 Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Div0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 31
 Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Div0" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 31
     Info (12134): Parameter "LPM_WIDTHN" = "33"
@@ -875,10 +969,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "m1B" is stuck at GND File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 16
-    Warning (13410): Pin "m2F" is stuck at VCC File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 16
     Warning (13410): Pin "m2B" is stuck at GND File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 16
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
     Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_32_result_int[0]~0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 156
     Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_11_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 41
@@ -943,15 +1036,15 @@ Info (17016): Found the following redundant logic cells in design
 Info (144001): Generated suppressed messages file C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/output_files/3201Final.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5760 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6683 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 5723 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Mon Dec 02 17:05:28 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:04
+    Info (21061): Implemented 6646 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4907 megabytes
+    Info: Processing ended: Mon Dec 02 22:04:41 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +------------------------------------------+

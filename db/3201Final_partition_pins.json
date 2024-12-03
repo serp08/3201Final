@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "m2F",
+					"strict" : false
+				},
+				{
 					"name" : "HEX0[0]",
 					"strict" : false
 				},
