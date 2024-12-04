@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Tue Dec 03 21:37:03 2024
+Analysis & Synthesis Status : Successful - Wed Dec 04 14:13:48 2024
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : 3201Final
 Top-level Entity Name : LuongMarcoFinal
 Family : MAX 10
-Total logic elements : 6,643
-    Total combinational functions : 6,611
-    Dedicated logic registers : 264
-Total registers : 264
+Total logic elements : 6,368
+    Total combinational functions : 6,337
+    Dedicated logic registers : 234
+Total registers : 234
 Total pins : 37
 Total virtual pins : 0
 Total memory bits : 0

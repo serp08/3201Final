@@ -1,42 +1,42 @@
 |LuongMarcoFinal
 clk => clk.IN1
-trig << sonic:sn.port1
+trig <= sonic:sn.port1
 echo => echo.IN1
 motion => toggle[0].CLK
 motion => toggle[1].CLK
-ledSpkr << beepBlink:bb.ledSpkr
-m1F << motorCtrl:mc.m1F
-m1B << motorCtrl:mc.m1B
-m2F << motorCtrl:mc.m2F
-m2B << motorCtrl:mc.m2B
-HEX0[0] << sevenSeg:one.port1
-HEX0[1] << sevenSeg:one.port1
-HEX0[2] << sevenSeg:one.port1
-HEX0[3] << sevenSeg:one.port1
-HEX0[4] << sevenSeg:one.port1
-HEX0[5] << sevenSeg:one.port1
-HEX0[6] << sevenSeg:one.port1
-HEX1[0] << sevenSeg:ten.port1
-HEX1[1] << sevenSeg:ten.port1
-HEX1[2] << sevenSeg:ten.port1
-HEX1[3] << sevenSeg:ten.port1
-HEX1[4] << sevenSeg:ten.port1
-HEX1[5] << sevenSeg:ten.port1
-HEX1[6] << sevenSeg:ten.port1
-HEX2[0] << sevenSeg:hun.port1
-HEX2[1] << sevenSeg:hun.port1
-HEX2[2] << sevenSeg:hun.port1
-HEX2[3] << sevenSeg:hun.port1
-HEX2[4] << sevenSeg:hun.port1
-HEX2[5] << sevenSeg:hun.port1
-HEX2[6] << sevenSeg:hun.port1
-HEX3[0] << sevenSeg:thou.port1
-HEX3[1] << sevenSeg:thou.port1
-HEX3[2] << sevenSeg:thou.port1
-HEX3[3] << sevenSeg:thou.port1
-HEX3[4] << sevenSeg:thou.port1
-HEX3[5] << sevenSeg:thou.port1
-HEX3[6] << sevenSeg:thou.port1
+ledSpkr <= beepBlink:bb.ledSpkr
+m1F <= motorCtrl:mc.m1F
+m1B <= motorCtrl:mc.m1B
+m2F <= motorCtrl:mc.m2F
+m2B <= motorCtrl:mc.m2B
+HEX0[0] <= sevenSeg:one.port1
+HEX0[1] <= sevenSeg:one.port1
+HEX0[2] <= sevenSeg:one.port1
+HEX0[3] <= sevenSeg:one.port1
+HEX0[4] <= sevenSeg:one.port1
+HEX0[5] <= sevenSeg:one.port1
+HEX0[6] <= sevenSeg:one.port1
+HEX1[0] <= sevenSeg:ten.port1
+HEX1[1] <= sevenSeg:ten.port1
+HEX1[2] <= sevenSeg:ten.port1
+HEX1[3] <= sevenSeg:ten.port1
+HEX1[4] <= sevenSeg:ten.port1
+HEX1[5] <= sevenSeg:ten.port1
+HEX1[6] <= sevenSeg:ten.port1
+HEX2[0] <= sevenSeg:hun.port1
+HEX2[1] <= sevenSeg:hun.port1
+HEX2[2] <= sevenSeg:hun.port1
+HEX2[3] <= sevenSeg:hun.port1
+HEX2[4] <= sevenSeg:hun.port1
+HEX2[5] <= sevenSeg:hun.port1
+HEX2[6] <= sevenSeg:hun.port1
+HEX3[0] <= sevenSeg:thou.port1
+HEX3[1] <= sevenSeg:thou.port1
+HEX3[2] <= sevenSeg:thou.port1
+HEX3[3] <= sevenSeg:thou.port1
+HEX3[4] <= sevenSeg:thou.port1
+HEX3[5] <= sevenSeg:thou.port1
+HEX3[6] <= sevenSeg:thou.port1
 
 
 |LuongMarcoFinal|sonic:sn
@@ -582,19 +582,17 @@ ledSpkr <= ledSpkrAlt.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |LuongMarcoFinal|motorCtrl:mc
-state[0] => always0.IN0
-state[0] => m2FReg.IN0
-state[0] => m1BReg.DATAA
+state[0] => m1B.DATAB
 state[0] => m1F.DATAIN
+state[0] => m1B.DATAA
+state[0] => always0.IN0
+state[1] => m2B.DATAB
+state[1] => m2F.DATAIN
 state[1] => always0.IN1
-state[1] => m2FReg.IN1
-state[1] => comb.IN1
-state[1] => comb.IN1
-state[1] => m2BReg.DATAA
-state[2] => ~NO_FANOUT~
+state[1] => m2B.DATAA
 m1F <= state[0].DB_MAX_OUTPUT_PORT_TYPE
-m1B <= m1BReg.DB_MAX_OUTPUT_PORT_TYPE
-m2F <= m2FReg.DB_MAX_OUTPUT_PORT_TYPE
-m2B <= m2BReg.DB_MAX_OUTPUT_PORT_TYPE
+m1B <= m1B.DB_MAX_OUTPUT_PORT_TYPE
+m2F <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+m2B <= m2B.DB_MAX_OUTPUT_PORT_TYPE
 
 

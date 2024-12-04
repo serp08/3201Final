@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484ES) Path("C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/output_files/") File("3201Final.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484ES) Path("C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/output_files/") File("3201Final.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

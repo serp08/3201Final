@@ -16,7 +16,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "m1B",
+					"strict" : false
+				},
+				{
 					"name" : "m2F",
+					"strict" : false
+				},
+				{
+					"name" : "m2B",
 					"strict" : false
 				},
 				{

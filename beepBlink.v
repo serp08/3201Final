@@ -14,7 +14,7 @@ always @(posedge clk) begin
 	if(sysActive == 1'b1) begin
 		counter <= counter + 1;
 		
-		if(counter % 10000000 == 0) begin // toggle every 2s
+		if(counter % 100000000 == 0) begin // toggle every 2s
 			if(on == 1'b0) begin
 				ledSpkrAlt <= 1'b1;
 				on <= 1'b1;
