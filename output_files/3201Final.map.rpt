@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 3201Final
-Mon Dec 02 22:04:41 2024
+Tue Dec 03 21:37:03 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 02 22:04:41 2024       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 03 21:37:03 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 3201Final                                   ;
 ; Top-level Entity Name              ; LuongMarcoFinal                             ;
@@ -189,7 +189,7 @@ refer to the applicable agreement for further details.
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
 ;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
+;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
 ;     Processors 9-10        ;   0.0%      ;
@@ -804,7 +804,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -814,7 +814,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Dec 02 22:04:30 2024
+    Info: Processing started: Tue Dec 03 21:36:53 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 3201Final -c 3201Final
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -1041,10 +1041,10 @@ Info (21057): Implemented 6683 device resources after synthesis - the final reso
     Info (21059): Implemented 34 output pins
     Info (21061): Implemented 6646 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4907 megabytes
-    Info: Processing ended: Mon Dec 02 22:04:41 2024
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Peak virtual memory: 4899 megabytes
+    Info: Processing ended: Tue Dec 03 21:37:03 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+

@@ -297,4 +297,6 @@ set_location_assignment PIN_AA12 -to motion
 set_location_assignment PIN_AA11 -to ledSpkr
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to but
 set_global_assignment -name VERILOG_FILE beepBlink.v
+set_location_assignment PIN_AB9 -to m2B
+set_location_assignment PIN_AB10 -to m2F
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
