@@ -49,8 +49,6 @@ always @(posedge clk) begin
 		if(dist < 25 || scanning == 1) begin 
 			if(scanning == 0) begin scanning <= 1; end
 			
-			// turn right 90 deg (01), left 180 (10),  right 90 (01)
-			// turn -direction- until turnduration (--) is zero, proceed
 			counter <= counter + 1;
 			
 			// keep track of clock of the longest distance recorded + direction
@@ -60,6 +58,7 @@ always @(posedge clk) begin
 				leftRight <= state;
 			end
 			
+			// turn right 90 deg (01), left 180 (10),  right 90 (01)
 			// increment state > turn right, set angle 90 > increment state > turn left 90 (back to fwd) > turn left 90 again > set to -90 > decrement state > turn right 90 (back to fwd)
 			if(counter % 50000000 == 0 && adjusting != 1) begin
 				if(i == 0) begin

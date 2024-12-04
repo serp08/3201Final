@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 3201Final
-Wed Dec 04 14:13:48 2024
+Wed Dec 04 16:37:10 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 04 14:13:48 2024       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 16:37:10 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; 3201Final                                   ;
 ; Top-level Entity Name              ; LuongMarcoFinal                             ;
@@ -176,59 +176,66 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
-; sonic.v                          ; yes             ; User Verilog HDL File        ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v                    ;         ;
-; LuongMarcoFinal.v                ; yes             ; User Verilog HDL File        ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v          ;         ;
-; 7seg.v                           ; yes             ; User Verilog HDL File        ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/7seg.v                     ;         ;
-; motorCtrl.v                      ; yes             ; User Verilog HDL File        ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/motorCtrl.v                ;         ;
-; beepBlink.v                      ; yes             ; User Verilog HDL File        ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/beepBlink.v                ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf         ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc        ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc    ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc         ;         ;
-; db/lpm_divide_qll.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_qll.tdf      ;         ;
-; db/sign_div_unsign_plh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_plh.tdf ;         ;
-; db/alt_u_div_she.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf       ;         ;
-; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/add_sub_t3c.tdf         ;         ;
-; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/add_sub_u3c.tdf         ;         ;
-; db/lpm_divide_ntl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_ntl.tdf      ;         ;
-; db/lpm_divide_qtl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_qtl.tdf      ;         ;
-; db/sign_div_unsign_slh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_slh.tdf ;         ;
-; db/alt_u_div_2ie.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_2ie.tdf       ;         ;
-; db/lpm_divide_4vl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_4vl.tdf      ;         ;
-; db/sign_div_unsign_6nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_6nh.tdf ;         ;
-; db/alt_u_div_mke.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_mke.tdf       ;         ;
-; db/lpm_divide_tll.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_tll.tdf      ;         ;
-; db/lpm_divide_anl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_anl.tdf      ;         ;
-; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_9nh.tdf ;         ;
-; db/alt_u_div_ske.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_ske.tdf       ;         ;
-; db/lpm_divide_fnl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_fnl.tdf      ;         ;
-; db/sign_div_unsign_enh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_enh.tdf ;         ;
-; db/alt_u_div_6le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_6le.tdf       ;         ;
-; db/lpm_divide_enl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_enl.tdf      ;         ;
-; db/sign_div_unsign_dnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_dnh.tdf ;         ;
-; db/alt_u_div_4le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_4le.tdf       ;         ;
-; db/lpm_divide_ptl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_ptl.tdf      ;         ;
-; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_rlh.tdf ;         ;
-; db/alt_u_div_0ie.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_0ie.tdf       ;         ;
-; db/lpm_divide_sll.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_sll.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; sonic.v                          ; yes             ; User Verilog HDL File        ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v                    ;         ;
+; LuongMarcoFinal.v                ; yes             ; User Verilog HDL File        ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v          ;         ;
+; 7seg.v                           ; yes             ; User Verilog HDL File        ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/7seg.v                     ;         ;
+; motorCtrl.v                      ; yes             ; User Verilog HDL File        ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/motorCtrl.v                ;         ;
+; beepBlink.v                      ; yes             ; User Verilog HDL File        ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/beepBlink.v                ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                               ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/abs_divider.inc                              ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc                          ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                               ;         ;
+; db/lpm_divide_qll.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_qll.tdf      ;         ;
+; db/sign_div_unsign_plh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_plh.tdf ;         ;
+; db/alt_u_div_she.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf       ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/add_sub_u3c.tdf         ;         ;
+; db/lpm_divide_ntl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_ntl.tdf      ;         ;
+; db/lpm_divide_qtl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_qtl.tdf      ;         ;
+; db/sign_div_unsign_slh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_slh.tdf ;         ;
+; db/alt_u_div_2ie.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_2ie.tdf       ;         ;
+; db/lpm_divide_4vl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_4vl.tdf      ;         ;
+; db/sign_div_unsign_6nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_6nh.tdf ;         ;
+; db/alt_u_div_mke.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_mke.tdf       ;         ;
+; db/lpm_divide_tll.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_tll.tdf      ;         ;
+; db/lpm_divide_anl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_anl.tdf      ;         ;
+; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_9nh.tdf ;         ;
+; db/alt_u_div_ske.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_ske.tdf       ;         ;
+; db/lpm_divide_fnl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_fnl.tdf      ;         ;
+; db/sign_div_unsign_enh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_enh.tdf ;         ;
+; db/alt_u_div_6le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_6le.tdf       ;         ;
+; db/lpm_divide_enl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_enl.tdf      ;         ;
+; db/sign_div_unsign_dnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_dnh.tdf ;         ;
+; db/alt_u_div_4le.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_4le.tdf       ;         ;
+; db/lpm_divide_ptl.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_ptl.tdf      ;         ;
+; db/sign_div_unsign_rlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_rlh.tdf ;         ;
+; db/alt_u_div_0ie.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_0ie.tdf       ;         ;
+; db/lpm_divide_sll.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_sll.tdf      ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -786,7 +793,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:17     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -796,218 +803,218 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 14:13:00 2024
+    Info: Processing started: Wed Dec 04 16:37:00 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 3201Final -c 3201Final
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sonic.v
-    Info (12023): Found entity 1: sonic File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 2
-Warning (10463): Verilog HDL Declaration warning at LuongMarcoFinal.v(26): "dist" is SystemVerilog-2005 keyword File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 26
+    Info (12023): Found entity 1: sonic File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 2
+Warning (10463): Verilog HDL Declaration warning at LuongMarcoFinal.v(26): "dist" is SystemVerilog-2005 keyword File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file luongmarcofinal.v
-    Info (12023): Found entity 1: LuongMarcoFinal File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 10
+    Info (12023): Found entity 1: LuongMarcoFinal File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file 7seg.v
-    Info (12023): Found entity 1: sevenSeg File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/7seg.v Line: 1
+    Info (12023): Found entity 1: sevenSeg File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/7seg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file motorctrl.v
-    Info (12023): Found entity 1: motorCtrl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/motorCtrl.v Line: 1
+    Info (12023): Found entity 1: motorCtrl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/motorCtrl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file beepblink.v
-    Info (12023): Found entity 1: beepBlink File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/beepBlink.v Line: 1
+    Info (12023): Found entity 1: beepBlink File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/beepBlink.v Line: 1
 Info (12127): Elaborating entity "LuongMarcoFinal" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at LuongMarcoFinal.v(74): truncated value with size 32 to match size of target (3) File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 74
-Info (12128): Elaborating entity "sonic" for hierarchy "sonic:sn" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 28
-Info (12128): Elaborating entity "sevenSeg" for hierarchy "sevenSeg:one" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 29
-Info (12128): Elaborating entity "beepBlink" for hierarchy "beepBlink:bb" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 35
-Info (12128): Elaborating entity "motorCtrl" for hierarchy "motorCtrl:mc" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 38
+Warning (10230): Verilog HDL assignment warning at LuongMarcoFinal.v(73): truncated value with size 32 to match size of target (3) File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 73
+Info (12128): Elaborating entity "sonic" for hierarchy "sonic:sn" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 28
+Info (12128): Elaborating entity "sevenSeg" for hierarchy "sevenSeg:one" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 29
+Info (12128): Elaborating entity "beepBlink" for hierarchy "beepBlink:bb" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 35
+Info (12128): Elaborating entity "motorCtrl" for hierarchy "motorCtrl:mc" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 38
 Info (278001): Inferred 13 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 29
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 30
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 30
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 31
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 31
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 32
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 32
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod1" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 22
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 18
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "beepBlink:bb|Mod0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/beepBlink.v Line: 17
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 64
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Div0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 31
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod2" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 26
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 29
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 29
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 29
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 30
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 30
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 31
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 31
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 32
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 32
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod1" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 22
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 18
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "beepBlink:bb|Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/beepBlink.v Line: 17
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 63
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Div0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 31
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "sonic:sn|Mod2" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 26
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 29
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 29
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_qll.tdf
-    Info (12023): Found entity 1: lpm_divide_qll File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_qll.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_qll File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_qll.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_plh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_plh File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_plh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_plh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_plh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_she.tdf
-    Info (12023): Found entity 1: alt_u_div_she File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 26
+    Info (12023): Found entity 1: alt_u_div_she File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
-    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/add_sub_t3c.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_t3c File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/add_sub_t3c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
-    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/add_sub_u3c.tdf Line: 22
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 30
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 30
+    Info (12023): Found entity 1: add_sub_u3c File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/add_sub_u3c.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 30
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 30
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ntl.tdf
-    Info (12023): Found entity 1: lpm_divide_ntl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_ntl.tdf Line: 24
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 31
-Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 31
+    Info (12023): Found entity 1: lpm_divide_ntl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_ntl.tdf Line: 24
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 31
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 31
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_qtl.tdf
-    Info (12023): Found entity 1: lpm_divide_qtl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_qtl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_qtl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_qtl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_slh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_slh File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_slh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_slh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_slh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_2ie.tdf
-    Info (12023): Found entity 1: alt_u_div_2ie File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_2ie.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div2" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 32
-Info (12133): Instantiated megafunction "lpm_divide:Div2" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 32
+    Info (12023): Found entity 1: alt_u_div_2ie File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_2ie.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div2" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 32
+Info (12133): Instantiated megafunction "lpm_divide:Div2" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 32
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "10"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_4vl.tdf
-    Info (12023): Found entity 1: lpm_divide_4vl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_4vl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_4vl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_4vl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_6nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_6nh File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_6nh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_6nh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_6nh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_mke.tdf
-    Info (12023): Found entity 1: alt_u_div_mke File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_mke.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Mod1" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 22
-Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Mod1" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 22
+    Info (12023): Found entity 1: alt_u_div_mke File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_mke.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Mod1" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 22
+Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Mod1" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 22
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_tll.tdf
-    Info (12023): Found entity 1: lpm_divide_tll File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_tll.tdf Line: 24
-Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Mod0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 18
-Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Mod0" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 18
+    Info (12023): Found entity 1: lpm_divide_tll File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_tll.tdf Line: 24
+Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 18
+Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Mod0" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 18
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "22"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_anl.tdf
-    Info (12023): Found entity 1: lpm_divide_anl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_anl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_anl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_anl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_9nh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_9nh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ske.tdf
-    Info (12023): Found entity 1: alt_u_div_ske File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_ske.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "beepBlink:bb|lpm_divide:Mod0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/beepBlink.v Line: 17
-Info (12133): Instantiated megafunction "beepBlink:bb|lpm_divide:Mod0" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/beepBlink.v Line: 17
+    Info (12023): Found entity 1: alt_u_div_ske File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_ske.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "beepBlink:bb|lpm_divide:Mod0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/beepBlink.v Line: 17
+Info (12133): Instantiated megafunction "beepBlink:bb|lpm_divide:Mod0" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/beepBlink.v Line: 17
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "27"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fnl.tdf
-    Info (12023): Found entity 1: lpm_divide_fnl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_fnl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_fnl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_fnl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_enh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_enh File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_enh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_enh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_enh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6le.tdf
-    Info (12023): Found entity 1: alt_u_div_6le File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_6le.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod4" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 64
-Info (12133): Instantiated megafunction "lpm_divide:Mod4" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/LuongMarcoFinal.v Line: 64
+    Info (12023): Found entity 1: alt_u_div_6le File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_6le.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod4" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 63
+Info (12133): Instantiated megafunction "lpm_divide:Mod4" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/LuongMarcoFinal.v Line: 63
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "26"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_enl.tdf
-    Info (12023): Found entity 1: lpm_divide_enl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_enl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_enl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_enl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dnh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_dnh File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_dnh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_dnh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_dnh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4le.tdf
-    Info (12023): Found entity 1: alt_u_div_4le File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_4le.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Div0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 31
-Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Div0" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 31
+    Info (12023): Found entity 1: alt_u_div_4le File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_4le.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Div0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 31
+Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Div0" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 31
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "6"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ptl.tdf
-    Info (12023): Found entity 1: lpm_divide_ptl File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_ptl.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_ptl File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_ptl.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_rlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_rlh File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/sign_div_unsign_rlh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_rlh File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/sign_div_unsign_rlh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0ie.tdf
-    Info (12023): Found entity 1: alt_u_div_0ie File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_0ie.tdf Line: 26
-Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Mod2" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 26
-Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Mod2" with the following parameter: File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/sonic.v Line: 26
+    Info (12023): Found entity 1: alt_u_div_0ie File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_0ie.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "sonic:sn|lpm_divide:Mod2" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 26
+Info (12133): Instantiated megafunction "sonic:sn|lpm_divide:Mod2" with the following parameter: File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/sonic.v Line: 26
     Info (12134): Parameter "LPM_WIDTHN" = "33"
     Info (12134): Parameter "LPM_WIDTHD" = "6"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_sll.tdf
-    Info (12023): Found entity 1: lpm_divide_sll File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/lpm_divide_sll.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_sll File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/lpm_divide_sll.tdf Line: 24
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_32_result_int[0]~0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 156
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_11_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 41
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_12_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 46
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_13_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 51
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_14_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 56
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_15_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 61
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_16_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 66
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_17_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 71
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_18_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 76
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_19_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 81
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_20_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 91
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_21_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 96
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_22_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 101
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_23_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 106
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_24_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 111
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_25_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 116
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_26_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 121
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_27_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 126
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_28_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 131
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_29_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 136
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_30_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 146
-    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_31_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 151
-    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_qtl:auto_generated|sign_div_unsign_slh:divider|alt_u_div_2ie:divider|add_sub_11_result_int[1]~14" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_2ie.tdf Line: 41
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_32_result_int[0]~0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 156
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_14_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 56
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_15_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 61
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_16_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 66
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_17_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 71
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_18_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 76
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_19_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 81
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_20_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 91
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_21_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 96
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_22_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 101
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_23_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 106
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_24_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 111
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_25_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 116
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_26_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 121
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_27_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 126
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_28_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 131
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_29_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 136
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_30_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 146
-    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_31_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 151
-    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_4vl:auto_generated|sign_div_unsign_6nh:divider|alt_u_div_mke:divider|add_sub_14_result_int[2]~18" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_mke.tdf Line: 56
-    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_4vl:auto_generated|sign_div_unsign_6nh:divider|alt_u_div_mke:divider|add_sub_14_result_int[1]~20" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_mke.tdf Line: 56
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_32_result_int[0]~0" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 156
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_17_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 71
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_18_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 76
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_19_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 81
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_20_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 91
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_21_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 96
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_22_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 101
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_23_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 106
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_24_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 111
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_25_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 116
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_26_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 121
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_27_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 126
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_28_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 131
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_29_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 136
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_30_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 146
-    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_31_result_int[0]~10" File: C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/db/alt_u_div_she.tdf Line: 151
-Info (144001): Generated suppressed messages file C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/output_files/3201Final.map.smsg
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_32_result_int[0]~0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 156
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_11_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 41
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_12_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 46
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_13_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 51
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_14_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 56
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_15_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 61
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_16_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 66
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_17_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 71
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_18_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 76
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_19_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 81
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_20_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 91
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_21_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 96
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_22_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 101
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_23_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 106
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_24_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 111
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_25_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 116
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_26_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 121
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_27_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 126
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_28_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 131
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_29_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 136
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_30_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 146
+    Info (17048): Logic cell "lpm_divide:Mod1|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_31_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 151
+    Info (17048): Logic cell "lpm_divide:Div1|lpm_divide_qtl:auto_generated|sign_div_unsign_slh:divider|alt_u_div_2ie:divider|add_sub_11_result_int[1]~14" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_2ie.tdf Line: 41
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_32_result_int[0]~0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 156
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_14_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 56
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_15_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 61
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_16_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 66
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_17_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 71
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_18_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 76
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_19_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 81
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_20_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 91
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_21_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 96
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_22_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 101
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_23_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 106
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_24_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 111
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_25_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 116
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_26_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 121
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_27_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 126
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_28_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 131
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_29_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 136
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_30_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 146
+    Info (17048): Logic cell "lpm_divide:Mod2|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_31_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 151
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_4vl:auto_generated|sign_div_unsign_6nh:divider|alt_u_div_mke:divider|add_sub_14_result_int[2]~18" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_mke.tdf Line: 56
+    Info (17048): Logic cell "lpm_divide:Div2|lpm_divide_4vl:auto_generated|sign_div_unsign_6nh:divider|alt_u_div_mke:divider|add_sub_14_result_int[1]~20" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_mke.tdf Line: 56
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_32_result_int[0]~0" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 156
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_17_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 71
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_18_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 76
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_19_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 81
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_20_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 91
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_21_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 96
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_22_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 101
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_23_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 106
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_24_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 111
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_25_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 116
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_26_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 121
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_27_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 126
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_28_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 131
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_29_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 136
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_30_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 146
+    Info (17048): Logic cell "lpm_divide:Mod3|lpm_divide_qll:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider|add_sub_31_result_int[0]~10" File: C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/db/alt_u_div_she.tdf Line: 151
+Info (144001): Generated suppressed messages file C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/output_files/3201Final.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 6408 device resources after synthesis - the final resource count might be different
@@ -1015,15 +1022,15 @@ Info (21057): Implemented 6408 device resources after synthesis - the final reso
     Info (21059): Implemented 34 output pins
     Info (21061): Implemented 6371 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4891 megabytes
-    Info: Processing ended: Wed Dec 04 14:13:48 2024
-    Info: Elapsed time: 00:00:48
-    Info: Total CPU time (on all processors): 00:00:58
+    Info: Peak virtual memory: 4900 megabytes
+    Info: Processing ended: Wed Dec 04 16:37:10 2024
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:05
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/serpe/Documents/uni/Y2/EECS3201/3201Final/output_files/3201Final.map.smsg.
+The suppressed messages can be found in C:/Users/serp/Documents/Uni/Second year/F2/3201/3201_workspace/3201Final/output_files/3201Final.map.smsg.
 
 
